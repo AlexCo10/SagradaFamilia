@@ -3,21 +3,22 @@ package Modelo;
 public class Feligres {
 
     private String cedula;
-    private int estrato;
+    private String estrato;
     private String nombre;
     private String direccion;
     private String telefono;
-    private boolean estado = false;
+    private String estado;
 
     public Feligres() {
     }
 
-    public Feligres(String cedula, int estrato, String nombre, String direccion, String telefono) {
+    public Feligres(String cedula, String estrato, String nombre, String direccion, String telefono, String estado) {
         this.cedula = cedula;
         this.estrato = estrato;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.estado = estado;
     }
 
     public String getCedula() {
@@ -28,11 +29,11 @@ public class Feligres {
         this.cedula = cedula;
     }
 
-    public int getEstrato() {
+    public String getEstrato() {
         return estrato;
     }
 
-    public void setEstrato(int estrato) {
+    public void setEstrato(String estrato) {
         this.estrato = estrato;
     }
 
@@ -60,16 +61,16 @@ public class Feligres {
         this.telefono = telefono;
     }
 
-    public boolean isEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
-
+    
     //metodo para calcular el valor del diezmo
-    public int calcularValorDiezmo() {
+    /*public void calcularValorDiezmo() {
         int valorDiezmo = 0;
         if (estrato == 1) {
             valorDiezmo = 250000;
@@ -92,5 +93,6 @@ public class Feligres {
         return estado;
 
     }
+*/
 
 }
