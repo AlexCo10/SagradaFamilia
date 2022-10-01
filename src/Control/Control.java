@@ -1,36 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- 
+
 package Control;
 
 import Modelo.*;
-//import Vista.*;
+import Vista.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Control implements ActionListener {
 
     private Feligres feligres;   
-    //private Vista vista;
+    private Vista vista;
 
     public Control() {
     }
 
     public Control(Feligres feligres, Vista v) {
+        super();
         this.feligres = feligres;
         this.vista = v;
         actionListener(this);
+        
     }
     
 
     public void actionListener(ActionListener control) {
 
         System.out.println("Peurr");
-        vista.btnGuardar.addActionListener(control);
-        vista.btnCalcular.addActionListener(control);
-        vista.btnMostrar.addActionListener(control);
+        vista.guardarBtn.addActionListener(control);
+        vista.eliminarBtn.addActionListener(control);
+        vista.actualizarBtn.addActionListener(control);
+        vista.buscarBtn.addActionListener(control);
     }
 
     @Override
@@ -39,21 +38,19 @@ public class Control implements ActionListener {
         System.out.println("action");
         if (e.getActionCommand().equals("Guardar")) {
             System.out.println("hhhhhh");
-            Double base = Double.parseDouble(vista.txtBase.getText());
-            Double altura = Double.parseDouble(vista.txtAltura.getText());
+            String nombre = vista.nombreTxField.getText();
+            String cedula = vista.feliCedulaTxField.getText();
+            String direccion = vista.direccionTxField.getText();
+            String telefono = vista.telefonoTxField.getText();
+            String estado = vista.estadoTxField.getText();
 
-            triangulo.setBase(base);
-            triangulo.setAltura(altura);
-
-        } else if (e.getActionCommand().contentEquals("Calcular")) {
-            triangulo.area();
-            FiguraGeometrica fg = new Triangulo();
-            fg.area();
-        } else if (e.getActionCommand().contentEquals("Mostrar")) {
-            vista.txtAreaTriangulo.setText(String.valueOf(triangulo.area()));
+            feligres.setNombre(nombre);
+            feligres.setCedula(cedula);
+            feligres.setDireccion(direccion);
+            feligres.setTelefono(telefono);
+            feligres.setEstado(estado);
         }
 
     }
     
 }
-*/

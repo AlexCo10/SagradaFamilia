@@ -410,16 +410,16 @@ public class Vista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton actualizarBtn;
-    private javax.swing.JButton buscarBtn;
-    private javax.swing.JButton consultarBtn;
+    public javax.swing.JButton actualizarBtn;
+    public javax.swing.JButton buscarBtn;
+    public javax.swing.JButton consultarBtn;
     public javax.swing.JTextField diezCedulaTxField;
     public javax.swing.JTextField direccionTxField;
-    private javax.swing.JButton eliminarBtn;
+    public javax.swing.JButton eliminarBtn;
     public javax.swing.JTextField estadoTxField;
     public javax.swing.JTextField estratoTxField;
     public javax.swing.JTextField feliCedulaTxField;
-    private javax.swing.JButton guardarBtn;
+    public javax.swing.JButton guardarBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -435,10 +435,10 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTextField nombreTxField;
-    private javax.swing.JButton pagarBtn;
+    public javax.swing.JButton pagarBtn;
     public javax.swing.JTextArea resultadoTxArea;
     public javax.swing.JTextField telefonoTxField;
-    private javax.swing.JButton totalizarBtn;
+    public javax.swing.JButton totalizarBtn;
     public javax.swing.JTextField valDiezTxField;
     // End of variables declaration//GEN-END:variables
 }
