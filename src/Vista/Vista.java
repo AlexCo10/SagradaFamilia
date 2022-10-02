@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Vista extends javax.swing.JFrame {
 
-    List<Feligres> feligresList=null;
+    public List<Feligres> feligresList=null;
     
     
     public Vista() {
